@@ -6,9 +6,12 @@
     margin: 0 auto;
 	width: 400px;
 	padding: 1em;
-	border:1px solid #3E17DD;
+	border:0px solid #3E17DD;
 	border-radius: 10px;
-	background-color: #3E17DD;
+    background: -webkit-linear-gradient(blue,red);
+    background: -o-linear-gradient(blue,red);
+    background: -moz-linear-gradient(blue,red); 
+    background: linear-gradient(blue,red);
 }
 ul{
 	list-style: none;
@@ -22,14 +25,20 @@ label{
 form input{
 	height: 30px;
 	width: 200px;
-	border:1px solid #3E17DD;
+	border:0px solid #3E17DD;
 	border-radius: 10px;
+	color:#1F00DF;
+	text-align: center;
 }
 .butt{
 	padding-top: 1em;
 	padding-left: 110px;
 	color:black
 }
-input{
-	text-align: center;
+.butt input:hover{
+	color:aliceblue;
+	background-color:#1F00DF;
+}
+fieldset{
+	border: 0px;
 }
